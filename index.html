@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/buttons.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js" integrity="sha256-hlKLmzaRlE8SCJC1Kw8zoUbU8BxA+8kR3gseuKfMjxA=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-color/2.1.2/jquery.color.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <title>WORDLE!</title>
+</head>
+<body>
+    <div class="header">
+        WORDLE!
+    </div><br><br><br>
+    <div class="wrapper">
+        <div class="lewo">
+            <br>
+            <a class="neon-button" onclick="nowaGra()">Rozpocznij grę od początku</a><br><br>
+            <a class="neon-button" onclick="wyswietlHaslo()">Wyświetl wylosowane zdanie(dev)</a><br>
+        </div>
+        <div class="srodek">
+            <div class="r1">
+                <input type="text" name="1L1" size="1" maxlength="1" autocomplete="off">
+                <input type="text" name="1L2" size="1" maxlength="1" autocomplete="off">
+                <input type="text" name="1L3" size="1" maxlength="1" autocomplete="off">
+                <input type="text" name="1L4" size="1" maxlength="1" autocomplete="off">
+                <input type="text" name="1L5" size="1" maxlength="1" autocomplete="off">
+            </div>
+            <div class="r2">
+                <input type="text" name="2L1" size="1" maxlength="1" autocomplete="off">
+                <input type="text" name="2L2" size="1" maxlength="1" autocomplete="off">
+                <input type="text" name="2L3" size="1" maxlength="1" autocomplete="off">
+                <input type="text" name="2L4" size="1" maxlength="1" autocomplete="off">
+                <input type="text" name="2L5" size="1" maxlength="1" autocomplete="off">
+            </div>
+            <div class="r3">
+                <input type="text" name="3L1" size="1" maxlength="1" autocomplete="off">
+                <input type="text" name="3L2" size="1" maxlength="1" autocomplete="off">
+                <input type="text" name="3L3" size="1" maxlength="1" autocomplete="off">
+                <input type="text" name="3L4" size="1" maxlength="1" autocomplete="off">
+                <input type="text" name="3L5" size="1" maxlength="1" autocomplete="off">
+            </div>
+            <div class="r4">
+                <input type="text" name="4L1" size="1" maxlength="1" autocomplete="off">
+                <input type="text" name="4L2" size="1" maxlength="1" autocomplete="off">
+                <input type="text" name="4L3" size="1" maxlength="1" autocomplete="off">
+                <input type="text" name="4L4" size="1" maxlength="1" autocomplete="off">
+                <input type="text" name="4L5" size="1" maxlength="1" autocomplete="off">
+            </div>
+            <div class="r5">
+                <input type="text" name="5L1" size="1" maxlength="1" autocomplete="off">
+                <input type="text" name="5L2" size="1" maxlength="1" autocomplete="off">
+                <input type="text" name="5L3" size="1" maxlength="1" autocomplete="off">
+                <input type="text" name="5L4" size="1" maxlength="1" autocomplete="off">
+                <input type="text" name="5L5" size="1" maxlength="1" autocomplete="off">
+            </div>
+            <div class="r6">
+                <input type="text" name="6L1" size="1" maxlength="1" autocomplete="off">
+                <input type="text" name="6L2" size="1" maxlength="1" autocomplete="off">
+                <input type="text" name="6L3" size="1" maxlength="1" autocomplete="off">
+                <input type="text" name="6L4" size="1" maxlength="1" autocomplete="off">
+                <input type="text" name="6L5" size="1" maxlength="1" autocomplete="off">
+            </div>
+        </div>
+        <div class="prawo">
+            <p><span class="czerwony">CZERWONY</span> = Litery nie ma w wyrazie</p>
+            <p><span class="zolty">ŻÓŁTY</span> = Litera jest, ale na zlym miejscu</p>
+            <p><span class="zielony">ZIELONY</span> = Litera jest na dobrym miejscu</p>
+        </div>
+    </div>
+    <script src="skrypty/wyrazy.js"></script>
+    <script src="skrypty/popular.js"></script>
+    <script src="skrypty/los.js"></script>
+    <script src="skrypty/enter.js"></script>
+    <script src="skrypty/wyszukaj_w_bazie.js"></script>
+    <script src="skrypty/buttons.js"></script>
+    <script src="skrypty/tab_index.js"></script>
+    <script src="skrypty/sound.js"></script>
+</body>
+</html>

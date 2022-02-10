@@ -1,0 +1,54 @@
+body{
+    background-color: #212121;
+    color:#c7c7c7;
+    font-family : 'Ubuntu', serif;
+}
+.header{
+    font-size: 5vw;
+    text-align: center;
+}
+.wrapper{
+    display:grid;
+    grid-template-columns: 25% 50% 25%;
+}
+.lewo{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    font-size:4vw;
+}
+.srodek{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    text-align: center;
+    position: relative;
+}
+.prawo{
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+input{
+    width:1em;
+    height:1em;
+    font-size:5.5vw;
+    text-align: center;
+    background-color: rgb(49, 37, 32);
+    border-style:solid;
+    border-width: 3px;
+    border-color: black;
+    border-radius: 5px;
+    color:#cfcfcf;
+    text-transform:uppercase;
+    margin:2px;
+}
+.czerwony{
+    color:#a13030;
+}
+.zolty{
+    color:yellow;
+}
+.zielony{
+    color:green;
+}
+p{
+    font-size:2vw;
+}
